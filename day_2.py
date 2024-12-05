@@ -37,6 +37,7 @@ def check_all_reports(path: str | pathlib.Path) -> int:
 
     return sum_
 
+
 def monotone_increasing(report: list[int]) -> bool:
     for p in itertools.pairwise(report):
         pair = Pairs(*p)
